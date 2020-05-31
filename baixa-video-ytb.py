@@ -19,10 +19,11 @@ import os, argparse
 parser = argparse.ArgumentParser(description='Fazer o download de vídeos do YouTube.')
 
 # Define uma 'flag' para poder passar a URL do vídeo.
-# Ex.: python baixa-video-ytb.py -l https://www.youtube.com/watch?v=uqvs2Yi7imA
+# Ex.: python baixa-video-ytb.py -u https://www.youtube.com/watch?v=uqvs2Yi7imA
 parser.add_argument('-u', dest='url_youtube', help='URL do vídeo no youtube')
 
 # Define uma 'flag' para poder passar o nome desejado para salvar o vídeo.
+# Ex.: python baixa-video-ytb,py -n video
 parser.add_argument('-n', dest='nome', help='nome que deseja salvar o vídeo')
 
 # Define uma váriavel que vai poder ser chamada para ter acesso aos dados que foram
